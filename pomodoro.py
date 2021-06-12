@@ -8,6 +8,7 @@
 # how many pomodoros its equal to, maybe even track it for you. For now, I'd just like to do it manually.
 
 total_minutes = 0
+pomodoro_duration = 25
 
 while True:
     duration = input("Enter a time\n")
@@ -24,4 +25,4 @@ while True:
 
 print("Total duration in minutes: {}".format(total_minutes))
 print("Total hours:minutes: {0:02}:{1:02}".format(total_minutes//60, total_minutes%60))
-print("Number of pomodoros: {}".format(total_minutes/20))
+print("Number of pomodoros: {}".format(total_minutes/pomodoro_duration))
